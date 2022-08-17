@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { postGuest } from './GuestService'
+import styled from 'styled-components'
 
 export const CheckinForm = ({addGuest}) => {
 

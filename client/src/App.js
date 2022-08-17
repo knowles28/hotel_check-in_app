@@ -3,6 +3,7 @@ import { getGuests, deleteGuestAPI } from './components/GuestService';
 import GuestList from './components/GuestList';
 import { CheckinForm } from './components/CheckinForm';
 import GuestItem from './components/GuestItem';
+import styled from 'styled-components'
 
 function App() {
 
@@ -31,13 +32,18 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>Hotel App</h1>
-      <CheckinForm addGuest={addGuest}/>
-      <GuestList guests={guests} deleteGuest={deleteGuest}  />
-    </div>
+    <AppContainer>
+        <h1>Hotel App</h1>
+        <CheckinForm addGuest={addGuest}/>
+        <GuestList guests={guests} deleteGuest={deleteGuest}  />
+    </AppContainer>
+
   );
 }
+
+const AppContainer = styled.div`
+  padding: 100px,
+`
 
 export default App;
 
