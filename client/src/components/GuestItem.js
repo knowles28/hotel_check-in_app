@@ -20,6 +20,7 @@ const GuestItem = ({guest, index, deleteGuest}) => {
 
 const Wrapper = styled.div`
   background-color: #A188A6;
+  padding: 30px;
   box-shadow: 20px 20px 20px #7F5A83;
   border-radius: 5px;
   display: flex;
@@ -28,7 +29,7 @@ const Wrapper = styled.div`
   text-align: center;
   /* flex-grow:1; */
   &:hover {
-      box-shadow: 20px 20px 20px #463248
+      box-shadow: 20px 10px 10px #463248
   }
 
 `

@@ -23,6 +23,7 @@ export const CheckinForm = ({addGuest}) => {
 
   return (
     <>
+    <Wrapper>
     <h3>Add New Guest:</h3>
     <form onSubmit={onSubmit}>
       <label htmlFor="name">Name:</label>
@@ -33,6 +34,11 @@ export const CheckinForm = ({addGuest}) => {
 
       <input type="submit" id="save" value="save"></input>
     </form>
+    </Wrapper>
     </>
   )
 }
+
+const Wrapper = styled.div `
+  border: 2px black solid,
+`

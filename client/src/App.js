@@ -41,10 +41,10 @@ function App() {
   );
 }
 
-const AppContainer = styled.div`
-  padding: 100px,
-`
 
 export default App;
 
 
+const AppContainer = styled.div`
+  padding: 400px,
+`
